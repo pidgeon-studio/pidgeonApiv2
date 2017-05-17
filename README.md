@@ -1,24 +1,18 @@
-# README
+# pidgeonApiv2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Start
+```bash
+$ cp .sample.env .env
+$ bundle
+$ rails s # http://localhost:3000
+```
 
-Things you may want to cover:
+# API Documentation
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## GET /test
+```json
+{
+  "recipient": "1234",
+  "message":"To: 1234 \n\nHello from Ruby on Rails 5",
+  "timestamp":"23-44-14-2017-17-05"}
+```

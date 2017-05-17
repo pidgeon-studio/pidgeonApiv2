@@ -2,7 +2,7 @@ class TestController < ApplicationController
 
   def index
     @recipient = '0727686700'
-    @message   = 'Hello from Raspberry PIv2'
+    @message   = 'Hello from Ruby on Rails 5'
 
     render json: create_file(@recipient, @message)
   end
